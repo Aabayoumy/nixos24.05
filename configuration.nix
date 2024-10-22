@@ -11,11 +11,10 @@
   system.autoUpgrade.enable = true;
 
   # Set your time zone.
-  time.timeZone = "America/New_York";
-  #time.timeZone = "America/Los_Angeles";
+  time.timeZone = "Africa/Cairo";
 
   # Define a user account.
-  users.users.anvil = {
+  users.users.abayoumy = {
     isNormalUser = true;
     extraGroups = [ "wheel" "docker" "systemd-journal" ];
     shell = pkgs.zsh;
@@ -54,12 +53,12 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     bash
-    cloud-init
+    #cloud-init
     coreutils
     curl
-    docker
-    docker-buildx
-    docker-compose
+    #docker
+    #docker-buildx
+    #docker-compose
     eza
     findutils
     fzf
@@ -92,6 +91,7 @@
     unzip
     util-linux
     wget
+    aria2
     yq
     zsh-autosuggestions
     zsh-syntax-highlighting
@@ -100,7 +100,7 @@
   #services.cloud-init.enable = true;
   services.openssh.enable = true;
   services.qemuGuest.enable = true;
-  virtualisation.docker.enable = true;
+  #virtualisation.docker.enable = true;
 
-  system.stateVersion = "23.11";
+  system.stateVersion = "24.05";
 }
