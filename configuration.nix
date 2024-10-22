@@ -16,7 +16,7 @@
   # Define a user account.
   users.users.abayoumy = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "docker" "systemd-journal" ];
+    extraGroups = [ "wheel" "systemd-journal" ];
     shell = pkgs.zsh;
     hashedPassword = "${HASHED_PASSWORD}";
     #packages = with pkgs; [];
