@@ -44,10 +44,10 @@ Run the following two commands in the VM console (you'll have to type them in, s
 
 nix-shell -p curl
 
-# https://t.ly/_c10E redirects to https://raw.githubusercontent.com/ilude/nix/main/setup.sh
+
 # download file and save as setup
 
-curl -Ls https://t.ly/_c10E > setup && bash setup
+curl -Ls https://raw.githubusercontent.com/Aabayoumy/nixos24.05/refs/heads/main/setup.sh > setup.sh && bash setup.sh
 
 ```
 
